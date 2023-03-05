@@ -37,6 +37,10 @@ if __name__ == "__main__":
     try:
       print("Storing cointegrated pairs...")
       stores_result = store_cointegration_results(df_market_prices)
+      with open('cointegrated_pairs.csv','r') as file:
+         msg = file.read()
+      send_message(msg)
+      
       if stores_result != "saved":
         print("Error saving cointegrated pairs")
         exit(1)
