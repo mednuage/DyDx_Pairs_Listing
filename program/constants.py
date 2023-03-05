@@ -19,6 +19,7 @@ MANAGE_EXITS = False
 PLACE_TRADES = False
 
 # Resolution
+#RESOLUTION = "15MINS"
 RESOLUTION = "1HOUR"
 
 
